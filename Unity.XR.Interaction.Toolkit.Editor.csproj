@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -47,57 +47,60 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.12</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.14</UnityProjectGeneratorVersion>
     <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.24f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\SettingsProvider\XRInteractionEditorSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\AR\Interactables\ARBaseGestureInteractableEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\AR\Interactables\ARTranslationInteractableEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\SettingsProvider\XRInteractionEditorSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Utilities\ScriptableSettings\ScriptableSettingsInitializer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\AR\Interactables\ARAnnotationInteractableEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Layers\InteractionLayerSettingsEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Interactables\XRBaseInteractableEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Controllers\XRBaseControllerEditor.deprecated.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\SettingsProvider\XRInteractionToolkitSettingsProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\BaseInteractionEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Controllers\XRControllerRecordingEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\AR\Interactors\ARGestureInteractorEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Controllers\ActionBasedControllerEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Debugger\XRInteractionDebuggerWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Controllers\XRBaseControllerEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\EventMigrationUtility.deprecated.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Interactors\XRBaseControllerInteractorEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Interactors\XRRayInteractorEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Utilities\ScriptableSettings\EditorScriptableSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Debugger\XRInputDevicesTreeView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Locomotion\SnapTurn\DeviceBasedSnapTurnProviderEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Debugger\XRInteractablesTreeView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Interactors\XRSocketInteractorEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\SettingsProvider\XRInteractionEditorSettingsEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Interactors\XRDirectInteractorEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Utilities\ScriptableSettings\ScriptableSettingsInitializer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\AR\Interactables\ARAnnotationInteractableEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Utilities\XRInteractionEditorGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Locomotion\Teleportation\TeleportationAreaEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Utilities\XRInteractionEditorUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Layers\InteractionLayerSettingsEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\CreateUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Locomotion\Teleportation\TeleportationAnchorEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Interactables\XRBaseInteractableEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Controllers\XRBaseControllerEditor.deprecated.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Interactors\XRBaseInteractorEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Controllers\XRControllerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\SettingsProvider\XRInteractionToolkitSettingsProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\BaseInteractionEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Interactors\XRBaseInteractorEditor.deprecated.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Utilities\PackageManagerEditorHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\AR\Interactables\ARPlacementInteractableEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Controllers\XRControllerRecordingEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\AR\Interactables\ARScaleInteractableEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\AR\Interactors\ARGestureInteractorEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Controllers\ActionBasedControllerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Debugger\XRInteractionDebuggerWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Controllers\XRBaseControllerEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Controllers\XRControllerRecorderEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Interactables\XRGrabInteractableEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\EventMigrationUtility.deprecated.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Debugger\XRInteractorsTreeView.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Interactables\XRBaseInteractableEditor.deprecated.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Layers\InteractionLayerUpdater.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Layers\InteractionLayerMaskDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Interactors\XRBaseControllerInteractorEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Interactors\XRRayInteractorEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Interactors\Helpers\XRInteractorLineVisualEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Utilities\ScriptableSettings\EditorScriptableSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Debugger\XRInputDevicesTreeView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Locomotion\SnapTurn\DeviceBasedSnapTurnProviderEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Debugger\XRInteractablesTreeView.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\AR\Interactables\ARRotationInteractableEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Interaction\Interactors\XRSocketInteractorEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\AR\Interactables\ARSelectionInteractableEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\XR\XRRigEditor.deprecated.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.0-pre.6\Editor\Locomotion\Teleportation\BaseTeleportationInteractableEditor.cs" />
@@ -337,12 +340,6 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.24f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -351,6 +348,12 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

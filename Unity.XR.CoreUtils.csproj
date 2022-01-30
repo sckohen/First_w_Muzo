@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -47,21 +47,34 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.12</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.14</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.24f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\XROrigin.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\HashCodeUtil.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\ComponentUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\StringExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\LayerMaskExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\MonoBehaviourExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\QuaternionExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\CameraExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\GuidExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\SerializableGuidUtil.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\SerializableGuid.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Attributes\EnumDisplayAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\Vector3Extensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\NativeArrayUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\GuidUtil.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\ARTrackablesParentTransformChangedEventArgs.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\DictionaryExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\MaterialUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\BoundsExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\BoundsUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\CollectionExtensions.cs" />
@@ -69,39 +82,29 @@
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\TypeExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\GeometryUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Attributes\FlagsPropertyAttribute.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\TextureUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\DebugDraw.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\UndoBlock.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\ReflectionUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\PoseExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\ObjectPool.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\ScriptableSettingsBase.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\OnDestroyNotifier.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\GameObjectExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\Vector2Extensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Attributes\ReadOnlyAttribute.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\ScriptableSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\TransformExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\ComponentUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\LayerMaskExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\SerializableGuidUtil.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\SerializableGuid.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\NativeArrayUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\XROrigin.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\ARTrackablesParentTransformChangedEventArgs.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\DictionaryExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\MaterialUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\CachedComponentFilter.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\HashSetExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\StopwatchExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\TextureUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\MathUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\DebugDraw.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\GameObjectUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\UndoBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\GUI\ScreenGUIUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\ReflectionUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\PoseExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\CollectionPool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\ObjectPool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\ScriptableSettingsBase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\OnDestroyNotifier.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\EnumValues.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\GameObjectExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\Vector2Extensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Attributes\ScriptableSettingsPathAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Attributes\ReadOnlyAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\ScriptableSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\ListExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\Extensions\TransformExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.xr.core-utils@2.0.0-pre.6\Runtime\UnityObjectUtils.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -339,12 +342,6 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.24f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -353,6 +350,12 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.24f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
